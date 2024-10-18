@@ -5,6 +5,9 @@ import zipfile
 import os
 import shutil
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 st.title("🎈 Separar PDF")
 st.write(
     "Carga tu archivo PDF y procesa para separarlos."
@@ -39,6 +42,7 @@ def separar_pdf(uploaded_file):
                 key_word = words[v-1]
                 name_words.append(key_word)
             name_words_concat = " ".join(name_words)
+            st.write(words)
             pdf_name = f"{name_words_concat}.pdf"
         else:
              pdf_name = f"{uploaded_file.name}_{i+1}.pdf"

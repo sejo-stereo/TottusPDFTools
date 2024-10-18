@@ -4,6 +4,9 @@ import pymupdf
 import tempfile
 import os
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 st.title("🎈 Unir PDF")
 st.write(
     "Carga tus archivos PDF y procesa para unirlos."
