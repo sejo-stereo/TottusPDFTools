@@ -1,4 +1,6 @@
-.stActionButton {visibility: hidden;}
+.stToolbarActionButton {
+    visibility: hidden;
+}
 
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
+/* #MainMenu {visibility: hidden;}
+footer {visibility: hidden;} */
