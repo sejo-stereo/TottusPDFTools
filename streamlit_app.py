@@ -11,13 +11,16 @@ pages = {
     st.Page("02_Separar_PDF.py",title="Separar PDF",icon="✂",url_path="general_separar_pdf"),
     st.Page("03_Convertir_PDF.py",title="Convertir PDF a Word",icon="📑",url_path="general_word_to_pdf"),
     # st.Page("04_Rotar_PDF.py",title="Rotar PDF")
-    st.Page("05_Imagen_a_pdf.py",title="Convertir Imagen a PDF",icon="📸",url_path="general_img_to_pdf")
+    st.Page("05_Imagen_a_pdf.py",title="Convertir Imagen a PDF",icon="📸",url_path="general_img_to_pdf"),
+    
     ],
     "PIL":[
         st.Page("06_Unir_PSP.py",title="Unir archivos PSP",icon="🖇",url_path="PIL_unir_PSP")    
     ],
     "ASISTENCIA":[
-        st.Page("07_Generar_Carta_Asistencia.py",title="Generar Cartas Asistencia",icon="🖨",url_path="asistencia_generar_cartas_asistencia")
+        st.Page("07_Generar_Carta_Asistencia.py",title="Generar Cartas Asistencia",icon="🖨",url_path="asistencia_generar_cartas_asistencia"),
+        st.Page("08_Unir_Pestanas_Marcas.py",title="Unir Pestañas de Marcas",icon="📸",url_path="asistencia_consolidar_pestanas_marcas")
+       
     ],
 }
 
