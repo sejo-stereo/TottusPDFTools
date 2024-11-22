@@ -7,8 +7,7 @@ with open('style.css') as f:
 
 st.title("🖨 Consolidar pestañas de un archivo Excel")
 st.write(
-    "Carga el archivo Excel para consolidar todas las pestañas. Las pestañas deben contar con la misma estructura de encabezados"
-    
+    "Carga el archivo Excel para consolidar todas las pestañas. Las pestañas deben contar con la misma estructura de encabezados"   
 )
 
 data_file = st.file_uploader(label="Cargar Excel",type=["xlsx","xlsb"],accept_multiple_files=False)
@@ -20,7 +19,6 @@ def consolidar_pestanas(file):
     xls = pd.ExcelFile(file)
     sheets = xls.sheet_names
     sheets = [sheet for sheet in sheets if sheet != "apoyo"]
-    st.write(sheets)
 
     dfs = []
     for sheet in sheets:
