@@ -16,7 +16,9 @@ pages = {
     "PIL":[
         st.Page("06_Unir_PSP.py",title="Unir archivos PSP",icon="🖇",url_path="PIL_unir_PSP")    
     ],
-    "ASISTENCIA":[],
+    "ASISTENCIA":[
+        st.Page("07_Generar_Carta_Asistencia.py",title="Generar Cartas Asistencia",icon="🖨",url_path="asistencia_generar_cartas_asistencia")
+    ],
 }
 
 pg = st.navigation(pages)
