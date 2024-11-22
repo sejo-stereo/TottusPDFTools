@@ -9,7 +9,7 @@ from pdf2docx import parse
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title("🎈 Convertir PDF a WORD")
+st.title("📑 Convertir PDF a WORD")
 st.write(
     "Carga tu archivo PDF y conviertelos a WORD."
 )

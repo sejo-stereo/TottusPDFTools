@@ -7,7 +7,7 @@ import shutil
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title("🎈 Separar PDF",anchor=False)
+st.title("✂ Separar PDF",anchor=False)
 st.write(
     "Carga tu archivo PDF y procesa para separarlos."
 )
