@@ -14,9 +14,9 @@ import tempfile
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title("🖨 Generar Cartas de Asistencia")
+st.title("🖨 Generar Cartas de Indicencia")
 st.write(
-    "Carga el archivo Excel con la data y genera las cargas de asistencia."
+    "Carga el archivo Excel con la data y genera las cargas de incidencias."
 )
 
 # Coordenadas PDF

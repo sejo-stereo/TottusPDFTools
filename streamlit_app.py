@@ -3,6 +3,8 @@ import streamlit as st
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+st.sidebar.write(f"Desarrollado por José Melgarejo.")
+
 
 pages = {
     "GENERAL":
@@ -15,11 +17,11 @@ pages = {
     
     ],
     "PIL":[
-        st.Page("06_Unir_PSP.py",title="Unir archivos PSP",icon="🖇",url_path="PIL_unir_PSP")    
+        st.Page("06_Unir_PSP.py",title="Consolidar archivos PSP",icon="🖇",url_path="pil_consolidar_PSP")    
     ],
     "ASISTENCIA":[
-        st.Page("07_Generar_Carta_Asistencia.py",title="Generar Cartas Asistencia",icon="🖨",url_path="asistencia_generar_cartas_asistencia"),
-        st.Page("08_Unir_Pestanas_Marcas.py",title="Unir Pestañas de Marcas",icon="📸",url_path="asistencia_consolidar_pestanas_marcas")
+        st.Page("07_Generar_Carta_Asistencia.py",title="Generar Cartas Incidencias",icon="🖨",url_path="asistencia_generar_cartas_incidencia"),
+        st.Page("08_Unir_Pestanas_Marcas.py",title="Unir Pestañas de Marcas",icon="📎",url_path="asistencia_consolidar_pestanas_marcas")
        
     ],
 }

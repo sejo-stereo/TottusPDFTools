@@ -5,7 +5,7 @@ import os
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title("🖨 Consolidar pestañas de un archivo Excel")
+st.title("📎 Consolidar pestañas de un archivo de marcas")
 st.write(
     "Carga el archivo Excel para consolidar todas las pestañas. Las pestañas deben contar con la misma estructura de encabezados"   
 )

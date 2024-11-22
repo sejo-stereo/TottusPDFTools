@@ -6,14 +6,14 @@ import os
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title("🖇 Unir PSP")
+st.title("🖇 Consolidar PSP")
 st.write(
-    "Carga tus archivos excel PSP y procesa para unirlos."
+    "Carga tus archivos excel PSP y procesa para consolidarlos."
 )
 
 max_rows = st.number_input(label="Nro Máximo de Filas",min_value=1,max_value=9_000,value=200,step=1)
 
-uploaded_files = st.file_uploader(label="Upload files",type=["xlsx","xlsb"],accept_multiple_files=True)
+uploaded_files = st.file_uploader(label="Cargar archivos",type=["xlsx","xlsb"],accept_multiple_files=True)
 
 def remove_file():
     os.remove("PSP Consolidado.xlsx")
