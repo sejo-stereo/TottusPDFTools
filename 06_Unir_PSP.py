@@ -23,7 +23,6 @@ def unir_PSP(files,maxrows):
     for file in files:
         data = pd.read_excel(file,skiprows=3,sheet_name="PSP SMALL",nrows=maxrows,dtype="object",usecols="M:BQ")
         dfs.append(data)
-        print(len(data))
     dataset = pd.concat(dfs,ignore_index=True)
     final_dataset =dataset[dataset["UNIDAD"] != "<<SELECCIONA OPCION>>"].dropna(how="all")
     final_dataset.to_excel("PSP Consolidado.xlsx",index=False)
