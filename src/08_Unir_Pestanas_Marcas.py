@@ -22,7 +22,7 @@ def consolidar_pestanas(file):
 
     dfs = []
     for sheet in sheets:
-        df = pd.read_excel(xls,sheet_name=sheet,skiprows=2,usecols="A:P")
+        df = pd.read_excel(xls,sheet_name=sheet,skiprows=2,usecols="A:O")
         dfs.append(df)
 
     alldf = pd.concat(dfs,ignore_index=True)
