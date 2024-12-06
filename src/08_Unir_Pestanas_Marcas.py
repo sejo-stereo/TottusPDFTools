@@ -18,7 +18,7 @@ def remove_file():
 def consolidar_pestanas(file):
     xls = pd.ExcelFile(file)
     sheets = xls.sheet_names
-    sheets = [sheet for sheet in sheets if sheet != "apoyo"]
+    sheets = [sheet for sheet in sheets if sheet not in ["apoyo","INDICE"]]
 
     dfs = []
     for sheet in sheets:
