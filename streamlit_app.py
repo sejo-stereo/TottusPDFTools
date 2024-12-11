@@ -25,6 +25,9 @@ pages = {
         st.Page("src//08_Unir_Pestanas_Marcas.py",title="Unir Pestañas de Marcas",icon="📎",url_path="asistencia_consolidar_pestanas_marcas")
        
     ],
+    "CONTABILIDAD":[
+        st.Page("src//10_Convertir_txt_falabella.py",title="Convertir TXT Falabella",icon="🖨",url_path="contabilidad_convertir_txt_falabella"),  
+    ]
 }
 
 pg = st.navigation(pages)
