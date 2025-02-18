@@ -32,7 +32,7 @@ def procesar_txt(txt_files):
         df["FECHA"] = pd.to_datetime(fecha).strftime("%d/%m/%Y")
         df["EMPRESA"] = empresa
         df["GLOSA"] = glosa
-        df["NRO OPERACION"] = id_operacions
+        df["NRO OPERACION"] = id_operacion
         df["Cuenta"] = df["Cuenta"].astype(str)    # df["ARCHIVO"] = txt_file
         # df["NroDoc"] = df.apply(lambda x: x["NroDoc"].zfill(8) if x["TipoDoc"] == "DNI" else x["NroDoc"].zfill(10))
         df["NroDoc"] = np.where(df["TipoDoc"] == "DNI",df["NroDoc"].astype(str).str.zfill(8),df["NroDoc"].astype(str).str.zfill(10))
