@@ -24,12 +24,13 @@ pages = {
         st.Page("src//07_Generar_Carta_Asistencia.py",title="Generar Cartas Incidencias",icon="🖨",url_path="asistencia_generar_cartas_incidencia"),
         st.Page("src//08_Unir_Pestanas_Marcas.py",title="Unir Pestañas de Marcas",icon="📎",url_path="asistencia_consolidar_pestanas_marcas"),
         st.Page("src//11_Generar_Carta_BonoPro.py",title="Generar Cartas Bono Pro",icon="🖨",url_path="asistencia_generar_cartas_bonopro"),
-        
-        
-       
+          
     ],
     "CONTABILIDAD":[
         st.Page("src//10_Convertir_txt_falabella.py",title="Convertir TXT Falabella",icon="🖨",url_path="contabilidad_convertir_txt_falabella"),  
+    ],
+    "NOMINA":[
+        st.Page("src//12_Formato_LBS.py",title="Firmar Documentos",icon="🖨",url_path="nomina_firmar_pdf"),  
     ]
 }
 
