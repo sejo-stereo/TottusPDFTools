@@ -27,7 +27,8 @@ pages = {
         st.Page("src//13_Generar_Carga_Geovictoria.py",title="Generar carga GeoVictoria",icon="🖨",url_path="asistencia_generar_carga_geovictoria"),  
     ],
     "CONTABILIDAD":[
-        st.Page("src//10_Convertir_txt_falabella.py",title="Convertir TXT Falabella",icon="🖨",url_path="contabilidad_convertir_txt_falabella"),  
+        st.Page("src//10_Convertir_txt_falabella.py",title="Convertir TXT Falabella",icon="🖨",url_path="contabilidad_convertir_txt_falabella"),
+        st.Page("src//14_Consolidar_Repositorio.py",title="Consolidar Repositorio",icon="🖨",url_path="contabilidad_consolidar_repositorios")  
     ],
     "NOMINA":[
         st.Page("src//12_Formato_LBS.py",title="Firmar Documentos",icon="🖨",url_path="nomina_firmar_pdf"),  
