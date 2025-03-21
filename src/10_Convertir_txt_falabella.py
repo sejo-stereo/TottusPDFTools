@@ -21,7 +21,7 @@ def procesar_txt(txt_files):
     for txt_file in txt_files:
         fecha = txt_file.name.split("_")[3]
         # empresa = txt_file.name.split("_")[5]
-        # glosa = txt_file.name.split("_")[6][:-4]
+        glosa = txt_file.name
         id_operacion = txt_file.name.split("_")[0]
         df = pd.read_fwf(txt_file,colspecs=([3,23],[23,63],[65,78],[78,80],[121,124],[124,136]),skiprows=1,header=None,encoding="ISO-8859-1")\
         .rename(columns={0:"Cuenta",1:"Nombres",2:"Entero",3:"Decimal",4:"TipoDoc",5:"NroDoc"})
@@ -31,7 +31,7 @@ def procesar_txt(txt_files):
         # df["ESTADO"] = estado
         # df["FECHA"] = pd.to_datetime(fecha).strftime("%d/%m/%Y")
         # df["EMPRESA"] = empresa
-        # df["GLOSA"] = glosa
+        df["GLOSA"] = glosa
         df["NRO OPERACION"] = id_operacion
         df["Cuenta"] = df["Cuenta"].astype(str)    # df["ARCHIVO"] = txt_file
         # df["NroDoc"] = df.apply(lambda x: x["NroDoc"].zfill(8) if x["TipoDoc"] == "DNI" else x["NroDoc"].zfill(10))
