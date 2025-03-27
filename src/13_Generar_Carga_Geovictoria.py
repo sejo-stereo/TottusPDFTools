@@ -46,7 +46,7 @@ def generate_output(excel_file,date_input,turnos_file):
     query_1_melt = query_df_1.melt(id_vars=cols_fijas,value_vars=["Dia_1","Dia_2","Dia_3","Dia_4","Dia_5","Dia_6","Dia_7"])
     query_2_melt = query_df_2.melt(id_vars=cols_fijas,value_vars=["Dia_8","Dia_9","Dia_10","Dia_11","Dia_12","Dia_13","Dia_14"])
     query_melted = pd.concat([query_1_melt,query_2_melt],axis=0,ignore_index=True)
-    query_melted["value"] = query_melted["value"].fillna("SinTurno")
+    query_melted["value"] = query_melted["value"].fillna("SinTurno") #reemplazar a los dias de descaso a "SinTurno"
     query_final = query_melted.merge(right=df_turnos,how="left",left_on="value",right_on="Turno_Lista").drop(columns=["Turno_Lista"])
     query_final["variable"] = query_final["variable"].replace(generate_dias(date_input))
     query_final["DIA"] = query_final["variable"].dt.day

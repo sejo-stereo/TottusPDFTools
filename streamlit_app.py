@@ -32,6 +32,8 @@ pages = {
     ],
     "NOMINA":[
         st.Page("src//12_Formato_LBS.py",title="Firmar Documentos",icon="🖨",url_path="nomina_firmar_pdf"),  
+        st.Page("src//15_Separar_Boleta.py",title="Separar Boletas",icon="🖨",url_path="nomina_separar_boletas"),  
+    
     ]
 }
 
