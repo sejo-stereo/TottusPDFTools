@@ -6,10 +6,15 @@
     background-color: rgb(240, 242, 246);
 }
 
-/* Seleccionar el contenedor principal del Dropzone */
 [data-testid="stFileUploaderDropzone"] {
     background-color: rgb(240, 242, 246); /* Fondo gris claro */
   }
 
-/* #MainMenu {visibility: hidden;}
-footer {visibility: hidden;} */
+._profileContainer_gzau3_53 {
+    display: none;
+  }
+
+.stSidebar * {
+    color: white; /* Aplica el color blanco a todos los subelementos dentro de .stSidebar */
+  }
+  
