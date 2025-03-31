@@ -11,7 +11,7 @@ with open('style.css') as f:
 
 
 def separar_documentos(pdf,tipo_documento):
-    rects = {"Boleta":[42, 110, 211, 117],"Liquidación":[403, 750, 450, 760]}
+    rects = {"Boleta":[42, 110, 211, 117],"Liquidación":[94, 128, 354, 131]}
     document_rect = rects[tipo_documento]
     doc = pymupdf.open(stream=pdf.read(),filetype="pdf")
     zip_buffer = io.BytesIO()
