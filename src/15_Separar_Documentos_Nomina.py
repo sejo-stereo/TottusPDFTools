@@ -14,7 +14,7 @@ def separar_documentos(pdf,tipo_documento):
     rects = {"Boleta":[42, 110, 211, 117],
              "Liquidación":[94, 128, 354, 131],
              "Cert. 5ta":[704, 549, 787, 572],
-             "Cert. Utilidades Tottus":[180, 185, 404, 195]}
+             "Cert. Utilidades Tottus":[196, 174, 264, 187]}
     document_rect = rects[tipo_documento]
     doc = pymupdf.open(stream=pdf.read(),filetype="pdf")
     zip_buffer = io.BytesIO()
@@ -24,7 +24,9 @@ def separar_documentos(pdf,tipo_documento):
     # agrupa las páginas por el DNI 
     for i in range(len(doc)):
         page = doc[i]
+        # print(page.rect)
         text = page.get_textbox(rect=document_rect).strip()
+        # print(text)
 
         if text in text_to_pages:
             text_to_pages[text].append(i)
@@ -41,7 +43,7 @@ def separar_documentos(pdf,tipo_documento):
             for page_num in pages:
                 new_doc.insert_pdf(doc, from_page=page_num, to_page=page_num)
             
-            new_doc.save(pdf_buffer)
+            new_doc.save(pdf_buffer,garbage=4,deflate=True)
             pdf_buffer.seek(0)
             zip_file.writestr(new_filename,pdf_buffer.getvalue())  
 
