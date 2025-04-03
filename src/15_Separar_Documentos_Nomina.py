@@ -14,7 +14,8 @@ def separar_documentos(pdf,tipo_documento):
     rects = {"Boleta":[42, 110, 211, 117],
              "Liquidación":[94, 128, 354, 131],
              "Cert. 5ta":[704, 549, 787, 572],
-             "Cert. Utilidades Tottus":[196, 174, 264, 187]}
+             "Cert. Utilidades Tottus":[196, 174, 264, 187],
+             "Cert. Utilidades Tottus Oriente":[196, 184, 320, 199]}
     document_rect = rects[tipo_documento]
     doc = pymupdf.open(stream=pdf.read(),filetype="pdf")
     zip_buffer = io.BytesIO()
@@ -67,7 +68,8 @@ tipo_documento = st.selectbox("Seleccione el tipo de documento a separar",
                               options=["Boleta",
                                        "Liquidación",
                                        "Cert. 5ta",
-                                       "Cert. Utilidades Tottus"])
+                                       "Cert. Utilidades Tottus",
+                                       "Cert. Utilidades Tottus Oriente"])
 uploaded_pdf = st.file_uploader("Cargar PDF",type=["pdf"],accept_multiple_files=False)
 if uploaded_pdf and tipo_documento:
     if st.button("Separar Documentos"):
