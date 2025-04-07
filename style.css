@@ -1,3 +1,9 @@
+.appview-container .main {
+  max-width: 100% !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .stToolbarActionButton {
     visibility: hidden;
 }
@@ -17,4 +23,5 @@
 .stSidebar * {
     color: white; /* Aplica el color blanco a todos los subelementos dentro de .stSidebar */
   }
-  
+
+

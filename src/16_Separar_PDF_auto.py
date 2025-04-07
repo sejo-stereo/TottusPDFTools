@@ -89,14 +89,19 @@ def separar_documentos(pdf,tipo_documento):
 st.title("📄 Separar PDF versión 2")
 
 st.markdown("""
-1. Cargar el PDF.
-2. En el lado izquierdo se mostrará la primera página del PDF. Debe seleccionar el texto que desea usar para separar el PDF.
-3. En el lado derecho aparecerá lo siguiente:
+
+Esta versión te permitira seleccionar que texto quiere usar para separar los PDFs, igualmente se usará el texto seleccionado para 
+nombrar cada archivo.
+            
+1. Ir a los 3 puntos de la esquina superior derecha >> Settings >> Habilitar Wide Mode. 
+2. Cargar el PDF.
+3. En el lado izquierdo se mostrará la primera página del PDF. Debe seleccionar el texto que desea usar para separar el PDF manteniendo el click izquierdo de esquina a esquina.
+4. En el lado derecho aparecerá lo siguiente:
    - Coordenadas seleccionadas.
    - El texto encontrado en las coordenadas seleccionadas.
    - Un campo para ingresar un texto que irá después del texto seleccionado.
-4. Una vez completados los pasos anteriores, podrá hacer clic en "Separar PDF".
-5. Al finalizar la separación, podrá descargar un archivo ZIP con sus documentos.
+5. Una vez completados los pasos anteriores, podrá hacer clic en "Separar PDF".
+6. Al finalizar la separación, podrá descargar un archivo ZIP con sus documentos.
 """)
 
 
