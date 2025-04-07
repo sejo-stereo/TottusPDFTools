@@ -14,8 +14,8 @@ pages = {
     st.Page("src//03_Convertir_PDF.py",title="Convertir PDF a Word",icon="📑",url_path="general_word_to_pdf"),
     # st.Page("04_Rotar_PDF.py",title="Rotar PDF")
     st.Page("src//05_Imagen_a_pdf.py",title="Convertir Imagen a PDF",icon="📸",url_path="general_img_to_pdf"),
-    st.Page("src//09_Proteger_PDF.py",title="Proteger PDF",icon="🔐",url_path="general_proteger_pdf")
-    
+    st.Page("src//09_Proteger_PDF.py",title="Proteger PDF",icon="🔐",url_path="general_proteger_pdf"),
+    st.Page("src//16_Separar_PDF_auto.py",title="Separar PDF v2",icon="📄",url_path="generar_separar_pdf_v2")
     ],
     "PIL":[
         st.Page("src//06_Unir_PSP.py",title="Consolidar archivos PSP",icon="🖇",url_path="pil_consolidar_PSP")    
